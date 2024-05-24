@@ -165,7 +165,6 @@ final class Converters {
                 return new ListTag(list, (byte) 0);
             }
             if (object instanceof CompoundTag tag1) {
-                System.out.println(tag1);
                 return asVanilla(tag1);
             }
             if (object instanceof UnitTag) return EndTag.INSTANCE;
